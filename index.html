@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Sheets Clone</title>
+  <link rel="stylesheet" href="in.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="innn.js"></script>
+</head>
+<body>
+  <div class="toolbar">
+    <button onclick="applyFunction('SUM')">SUM</button>
+    <button onclick="applyFunction('AVERAGE')">AVERAGE</button>
+    <button onclick="applyFunction('MAX')">MAX</button>
+    <button onclick="applyFunction('MIN')">MIN</button>
+    <button onclick="applyFunction('COUNT')">COUNT</button>
+  </div>
+  <div class="formula-bar">
+    <input type="text" id="formula-input" placeholder="Enter formula or value">
+  </div>
+  <div id="spreadsheet"></div>
+</body>
+</html>
