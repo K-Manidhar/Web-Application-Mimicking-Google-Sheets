@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .toolbar {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f1f3f4;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .toolbar button {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .formula-bar {
+    padding: 10px;
+    background-color: #f1f3f4;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #spreadsheet {
+    display: grid;
+    grid-template-columns: 50px repeat(10, 100px); /* First column for row numbers */
+    grid-template-rows: 30px repeat(20, 30px); /* First row for column letters */
+    gap: 1px;
+    margin: 10px;
+  }
+  
+  .cell {
+    border: 1px solid #ddd;
+    padding: 5px;
+    box-sizing: border-box;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cell.header {
+    background-color: #f1f3f4;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+  }
+  
+  .cell[contenteditable="true"]:focus {
+    border: 2px solid #1a73e8;
+  }
+  .cell.selected {
+    background-color: #c9daf8; /* Light blue background for selected cells */
+  }
